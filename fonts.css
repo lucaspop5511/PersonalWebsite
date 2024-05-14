@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Rubik_B';
+    src: url('FONTS/Stick/p.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('FONTS/Pacifico/p.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('FONTS/Silkscreen/p.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rubik_S';
+    src: url('FONTS/Rubik_Scribble/p.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Varela';
+    src: url('FONTS/Varela_Round/p.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Terminal';
+    src: url('FONTS/VT323/VT323-Regular.ttf') format('truetype');
+}

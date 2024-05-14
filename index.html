@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="minigame.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="fonts.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.dom.min.js"></script>
+
+  <script src="sketch.js" defer></script>
+</head>
+
+<body>
+
+  <div id="canvas-container"></div> <!-- Container for the p5.js canvas -->
+
+  <div id="content-container">
+    <nav id="navbar">
+      <button class="nav-btn" data-section="about" onclick="showSection('about')">About</button>
+      <button class="nav-btn" data-section="projects" onclick="showSection('projects')">Projects</button>
+      <button class="nav-btn" data-section="minigame" onclick="showSection('minigame')">Minigame</button>
+      <button class="nav-btn" data-section="contact" onclick="showSection('contact')">Contact</button>
+
+    </nav>
+
+    <div id="default-message" class="default-message">
+      <h2>Welcome!</h2>
+      <p>Make yourself at home</p>
+    </div>
+
+    <div id="about" class="content-section">
+      <div class="aboutContainer">
+        <div class="description">
+          <div class="description-container">
+            <h1 class="about-title">About Me</h1>
+            <p class="about-p">
+              I'm a dedicated romanian computer science student with a passion for web design,
+              UI/UX graphics, game development, and software and mobile app development.
+              I thrive in creative and technical challenges,
+              always seeking to blend innovative design with robust functionality.
+            </p>
+            <h3>Education</h3>
+            <p class="about-p">
+              At FSEGA, I study Economics and Business Administration, that includes:
+              Business Information Systems,
+              Cybernetics and Statistics Economics,
+              Finance, Management and Marketing
+            </p>
+          </div>
+        </div>
+        <div class="skills">
+          <h1 class="about-title">Skills</h1>
+          <ul>
+            <li>problem solving, logical thinking</li>
+            <li>time management, atention to detail</li>
+            <li>creativity, continuous learning</li>
+            <li>Programming (C++, C#, Java, Swift)</li>
+            <li>Databases (SQL)</li>
+            <li>Web development (HTML, CSS, JS, React.js, p5.js, Node.js, SVG)</li>
+            <li>Algorithms and data structures</li>
+          </ul>
+          <div class="lang">
+            <div class="romanian">
+              <h3 class="lang-title">Romanian</h3>
+              <p class="lang-level">native</p>
+            </div>
+            <div class="english">
+              <h3 class="lang-title">English</h3>
+              <p class="lang-level">fluent</p>
+            </div>
+            <div class="german">
+              <h3 class="lang-title">German</h3>
+              <p class="lang-level">beginner</p>
+            </div>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <a href="Pop's Resume.pdf" target="_blank">
+            <button class="resume">resume/CV</button>
+          </a>
+          <div class="hobbies">
+            <h1 class="about-title">Hobbies</h1>
+            <ul>
+              <li>Nature</li>
+              <li>Music</li>
+              <li>Biking</li>
+              <li>Coding</li>
+              <li>Piano</li>
+              <li>Hiking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="content-section" style="display:none;">
+      <div class="projects-container">
+        <div class="computer-container">
+          <object data="OldComputer.svg" type="image/svg+xml" class="computer" id="svgObject"></object>
+        </div>
+        <div class="computer-preview">
+          <h2 class="preview-title">_computer offline</h2>
+          <p class="preview-text">
+            A problem has been detected and Windows has been shut down to prevent damage to your computer <br>
+            ERROR_SERVICE_DISABLED 1058 <br> (0x422)
+            The service cannot be started, either because it is disabled or because it has no enabled
+            devices associated with it. <br> <br>
+            To solve this problem follow these steps: <br>
+            _turn on computer
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="minigame" class="content-section" style="display:none;">
+      <div class="container">
+        <div class="item item-1">
+          <div class="slider-container">
+            <input type="range" style="writing-mode: vertical-lr; direction: rtl" id="redSlider" value="144" min="0"
+              max="255" orient="vertical">
+          </div>
+          <div class="slider-container">
+            <input type="range" style="writing-mode: vertical-lr; direction: rtl" id="greenSlider" value="201" min="0"
+              max="255" orient="vertical">
+          </div>
+          <div class="slider-container">
+            <input type="range" style="writing-mode: vertical-lr; direction: rtl" id="blueSlider" value="214" min="0"
+              max="255" orient="vertical">
+          </div>
+        </div>
+
+        <div class="item item-2" id="previewColor">
+          <div class="color-display-preview">
+          </div>
+        </div>
+        <div class="item item-3" id="matchThisColor">
+          <div class="color-display-match"></div>
+        </div>
+        <div class="item item-4">
+          <h2 class="title">Match The Color!</h2>
+          <p>Use the RGB sliders to match the color</p>
+          <p>Press the NEW button to generate a new color</p>
+        </div>
+        <button onclick="randomizeColor()" class="item item-5">NEW</button>
+        <div class="connecting-line"></div>
+      </div>
+    </div>
+
+    <div id="contact" class="content-section" style="display:none;">
+      <div class="parent">
+        <a href="https://wa.me/0750411219" id="phone" class="contact-card">
+          <i class="fa-brands fa-whatsapp"></i>
+          <p class="horizontal">0750411219</p>
+        </a>
+        <a href="https://t.me/lukibuki" id="telegram" class="contact-card">
+          <i class="fa-brands fa-telegram"></i>
+          <p class="vertical">@lukibuki</p>
+        </a>
+        <a href="https://www.instagram.com/lucaspop51/" id="instagram" class="contact-card">
+          <i class="fa-brands fa-instagram"></i>
+          <p class="vertical">@lucaspop51</p>
+        </a>
+        <a href="https://github.com/lucaspop5511" id="github" class="contact-card">
+          <i class="fa-brands fa-github"></i>
+          <p class="vertical">lucaspop5511</p>
+        </a>
+        <a href="https://www.youtube.com/@milk.honey51" id="youtube" class="contact-card">
+          <i class="fa-brands fa-youtube"></i>
+          <p class="horizontal">milk+honey</p>
+        </a>
+        <a href="https://www.linkedin.com/in/pop-lucas-135993249/" id="linkedin" class="contact-card">
+          <i class="fa-brands fa-linkedin"></i>
+          <p class="vertical">Pop Lucas</p>
+        </a>
+        <a href="mailto:lucaspop5511@gmail.com" target="_blank" id="gmail" class="contact-card">
+          <i class="fa-brands fa-google"></i>
+          <p class="horizontal">lucaspop5511@gmail.com</p>
+        </a>
+        <a href="mailto:lucas.pop@stud.ubbcluj.ro" target="_blank" id="ubbmail" class="contact-card">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <p class="horizontal">lucas.pop@stud.ubbcluj.ro</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="spot.js"></script>
+  <script src="sketch.js"></script>
+  <script src="blob.js"></script>
+  <script src="LineText.js"></script>
+
+
+</body>
+
+</html>

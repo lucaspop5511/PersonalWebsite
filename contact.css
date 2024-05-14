@@ -1,0 +1,222 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1.5em;
+    height: 60vh;
+    width: 87.5vw;
+    position: absolute;
+    margin-top: 2em;
+    margin-right: 1em;
+    justify-content: center;
+}
+
+.contact-card {
+    padding: 20px;
+    box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.25);
+    border-style: solid;
+    border-width: 4px;
+    border-color: #ffffffe9;
+    border-radius: 1.5em;
+    background-color: transparent;
+    transition: 1s ease-in-out;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contact-card p {
+    color: transparent;
+    transition: color .5s ease-out;
+}
+
+.contact-card .horizontal,
+.contact-card .vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin-top: 0em;
+    margin-left: 1vw;
+    color: rgba(255, 255, 255, 0);
+}
+
+.contact-card:hover {
+    transform: scale(1.025);
+}
+
+.contact-card:hover p {
+    transition: color 2s ease-in;
+}
+
+a {
+    text-decoration: none;
+}
+
+#phone {
+    grid-area: 1 / 1 / 2 / 7;
+    background: -webkit-linear-gradient(0deg, transparent 50%, rgb(37, 211, 102) 50%);
+    background-size: 120vw 27vh;
+}
+
+#phone p {
+    font-size: 3vw;
+    letter-spacing: .4vw;
+    margin-bottom: 0;
+}
+
+#phone:hover {
+    background-position: 55vw 0;
+}
+
+#phone:hover p {
+    color: rgb(29, 173, 82)
+}
+
+#telegram {
+    grid-area: 1 / 7 / 3 / 9;
+    background: -webkit-linear-gradient(transparent 50%, rgb(41, 164, 230) 50%);
+    background-size: 1vw 70vh;
+}
+
+#telegram p {
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+
+#telegram:hover {
+    background-position: 0 -36vh;
+}
+
+#telegram:hover p {
+    color: rgb(120, 199, 242);
+}
+
+#instagram {
+    grid-area: 1 / 9 / 3 / 11;
+    background: -webkit-linear-gradient(transparent 50%, rgb(78, 3, 116) 50%);
+    background-size: 1vw 70vh;
+}
+
+#instagram p {
+    font-size: 1.5vw;
+    margin-bottom: 0;
+}
+
+#instagram:hover {
+    background-position: 0 -36vh;
+}
+
+#instagram:hover p {
+    color: rgb(125, 69, 181);
+}
+
+#github {
+    grid-area: 2 / 1 / 4 / 4;
+    background: -webkit-linear-gradient(transparent 50%, rgb(38, 41, 48) 50%);
+    background-size: 1vw 70vh;
+}
+
+#github p {
+    font-size: 2.2vw;
+    margin-left: 1.5vw;
+}
+
+#github:hover {
+    background-position: 0 -35vh;
+}
+
+#github:hover p {
+    color: rgb(107, 107, 123);
+}
+
+#youtube {
+    grid-area: 4 / 1 / 5 / 4;
+    background: -webkit-linear-gradient(0deg, transparent 50%, rgb(234, 50, 37) 50%);
+    background-size: 120vw 27vh;
+}
+
+#youtube p {
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+
+#youtube:hover {
+    background-position: 25vw 0;
+}
+
+#youtube:hover p {
+    color: rgb(242, 120, 117);
+}
+
+#linkedin {
+    grid-area: 2 / 4 / 5 / 7;
+    background: -webkit-linear-gradient(transparent 50%, rgb(23, 110, 161) 50%);
+    background-size: 1vw 90vh;
+}
+
+#linkedin p {
+    font-size: 2.5vw;
+    margin-left: 1.5vw;
+    margin-bottom: 0;
+}
+
+#linkedin:hover {
+    background-position: 0 -45vh;
+}
+
+#linkedin:hover p {
+    color: rgb(97, 157, 192);
+}
+
+#gmail {
+    grid-area: 3 / 7 / 4 / 11;
+    background: -webkit-linear-gradient(0deg, transparent 50%, rgb(213, 71, 50) 50%);
+    background-size: 80vw 27vh;
+}
+
+#gmail p {
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+
+#gmail:hover {
+    background-position: 40vw 0;
+}
+
+#gmail:hover p {
+    color: rgba(225, 126, 126, 0.868);
+}
+
+#ubbmail {
+    grid-area: 4 / 7 / 5 / 11;
+    background: -webkit-linear-gradient(0deg, transparent 50%, rgb(226, 199, 0) 50%);
+    background-size: 80vw 27vh;
+}
+
+#ubbmail p {
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+
+#ubbmail:hover {
+    background-position: 40vw 0;
+}
+
+#ubbmail:hover p {
+    color: rgb(249, 249, 103);
+}
+
+.fa-brands {
+    color: white;
+    font-size: 3em;
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+}
+
+.fa-solid {
+    color: white;
+    font-size: 3em;
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+}
