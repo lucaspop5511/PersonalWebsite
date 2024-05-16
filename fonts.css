@@ -27,3 +27,18 @@
     font-family: 'Terminal';
     src: url('FONTS/VT323/VT323-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('FONTS/Orbitron/p.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Jacquarda';
+    src: url('FONTS/Jacquarda/p.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vibes';
+    src: url('FONTS/Great_Vibes/p.ttf') format('truetype');
+}

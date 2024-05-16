@@ -125,7 +125,10 @@ document.addEventListener('DOMContentLoaded', function () {
             var imageLinks = [
                 "https://editor.p5js.org/lucaspop51/sketches/_FCXqmthU",
                 "https://editor.p5js.org/lucaspop51/sketches/JL0metTAs",
-                "https://editor.p5js.org/lucaspop51/sketches/5ieyXr2__"
+                "https://editor.p5js.org/lucaspop51/sketches/5ieyXr2__",
+                "https://editor.p5js.org/lucaspop51/sketches/zL132ZBJr",
+                "https://editor.p5js.org/lucaspop51/sketches/jO4B9AF9r",
+                "https://responsive-digital-clock.vercel.app/"
             ];
 
             ellipse.addEventListener('click', function (event) {
@@ -152,16 +155,28 @@ document.addEventListener('DOMContentLoaded', function () {
                         // Update computer-preview text based on the image
                         switch (currentImageIndex) {
                             case 0:
-                                document.querySelector('.preview-title').textContent = "_randomNumberGuesser  (1/3)";
+                                document.querySelector('.preview-title').textContent = "_randomNumberGuesser  (1/6)";
                                 document.querySelector('.preview-text').textContent = "This p5.js sketch is a number guessing game where the player needs to guess a number between 1 and 100. The sketch generates a random number, and the player inputs their guess. After each guess, the sketch provides feedback on whether the guess is too high, too low, or correct. Additionally, it keeps track of the number of attempts made by the player.";
                                 break;
                             case 1:
-                                document.querySelector('.preview-title').textContent = "_hangman  (2/3)";
+                                document.querySelector('.preview-title').textContent = "_hangman  (2/6)";
                                 document.querySelector('.preview-text').textContent = "This is a p5.js hangman game, where the objective is to guess the word by typing letters. Another person writes a word, and clicks 'start'. The player types letters inside the input area to guess the word. If the guessed letter is correct, it fills in the corresponding blanks in the word. If the letter is incorrect, it starts to draw parts of the hangman. The player wins by guessing the word before the hangman is fully drawn.";
                                 break;
                             case 2:
-                                document.querySelector('.preview-title').textContent = "_bulletDodger  (3/3)";
+                                document.querySelector('.preview-title').textContent = "_bulletDodger  (3/6)";
                                 document.querySelector('.preview-text').textContent = "This p5.js sketch is a bullet dodger game where the player controls a square character at the bottom of the screen using the right and left arrow keys. The objective is to avoid incoming bullets falling from the top of the screen. The player's score increases as they successfully dodge bullets. The game ends when a bullet collides with the player's character.";
+                                break;
+                            case 3:
+                                document.querySelector('.preview-title').textContent = "_registrationPlateGenerator  (4/6)";
+                                document.querySelector('.preview-text').textContent = "This p5.js sketch generates random car registration plates. It randomly generates letters and two randomly generated numbers. The colors of the plate background are determined by mapping the ASCII values of the generated letters to RGB values. When the mouse is clicked, new random letters and numbers are generated.";
+                                break;
+                            case 4:
+                                document.querySelector('.preview-title').textContent = "_tickleGame  (5/6)";
+                                document.querySelector('.preview-text').textContent = "This p5.js sketch is a simple interactive game called _tickleGame and  involves a moving circle controlled by the mouse cursor. The objective is to keep the mouse cursor over the circle for as long as possible. Each second the cursor remains over the circle, the player's counter increases. The game also tracks and displays the player's high score. ";
+                                break;
+                            case 5:
+                                document.querySelector('.preview-title').textContent = "_responsiveDigitatClockWebsite  (6/6)";
+                                document.querySelector('.preview-text').textContent = "This website is elegantly simple, with a sole purpose: to display the current time. It is also responsive to screen size. Try it out!";
                                 break;
                             default:
                                 break;
@@ -184,16 +199,28 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Update computer-preview text based on the new image
                     switch (currentImageIndex) {
                         case 0:
-                            document.querySelector('.preview-title').textContent = "_randomNumberGuesser  (1/3)";
+                            document.querySelector('.preview-title').textContent = "_randomNumberGuesser  (1/6)";
                             document.querySelector('.preview-text').textContent = "This p5.js sketch is a number guessing game where the player needs to guess a number between 1 and 100. The sketch generates a random number, and the player inputs their guess. After each guess, the sketch provides feedback on whether the guess is too high, too low, or correct. Additionally, it keeps track of the number of attempts made by the player.";
                             break;
                         case 1:
-                            document.querySelector('.preview-title').textContent = "_hangman  (2/3)";
+                            document.querySelector('.preview-title').textContent = "_hangman  (2/6)";
                             document.querySelector('.preview-text').textContent = "This is a p5.js hangman game, where the objective is to guess the word by typing letters. Another person writes a word, and clicks 'start'. The player types letters inside the input area to guess the word. If the guessed letter is correct, it fills in the corresponding blanks in the word. If the letter is incorrect, it starts to draw parts of the hangman. The player wins by guessing the word before the hangman is fully drawn.";
                             break;
                         case 2:
-                            document.querySelector('.preview-title').textContent = "_bulletDodger  (3/3)";
+                            document.querySelector('.preview-title').textContent = "_bulletDodger  (3/6)";
                             document.querySelector('.preview-text').textContent = "This p5.js sketch is a bullet dodger game where the player controls a square character at the bottom of the screen using the right and left arrow keys. The objective is to avoid incoming bullets falling from the top of the screen. The player's score increases as they successfully dodge bullets. The game ends when a bullet collides with the player's character.";
+                            break;
+                        case 3:
+                            document.querySelector('.preview-title').textContent = "_registrationPlateGenerator  (4/6)";
+                            document.querySelector('.preview-text').textContent = "This p5.js sketch generates random car registration plates. It randomly generates letters and two randomly generated numbers. The colors of the plate background are determined by mapping the ASCII values of the generated letters to RGB values. When the mouse is clicked, new random letters and numbers are generated.";
+                            break;
+                        case 4:
+                            document.querySelector('.preview-title').textContent = "_tickleGame  (5/6)";
+                            document.querySelector('.preview-text').textContent = "This p5.js sketch is a simple interactive game called _tickleGame and  involves a moving circle controlled by the mouse cursor. The objective is to keep the mouse cursor over the circle for as long as possible. Each second the cursor remains over the circle, the player's counter increases. The game also tracks and displays the player's high score. ";
+                            break;
+                        case 5:
+                            document.querySelector('.preview-title').textContent = "_responsiveDigitatClockWebsite  (6/6)";
+                            document.querySelector('.preview-text').textContent = "This website is elegantly simple, with a sole purpose: to display the current time. It is also responsive to screen size. Try it out!";
                             break;
                         default:
                             break;
@@ -209,16 +236,28 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Update computer-preview text based on the new image
                     switch (currentImageIndex) {
                         case 0:
-                            document.querySelector('.preview-title').textContent = "_randomNumberGuesser  (1/3)";
+                            document.querySelector('.preview-title').textContent = "_randomNumberGuesser  (1/6)";
                             document.querySelector('.preview-text').textContent = "This p5.js sketch is a number guessing game where the player needs to guess a number between 1 and 100. The sketch generates a random number, and the player inputs their guess. After each guess, the sketch provides feedback on whether the guess is too high, too low, or correct. Additionally, it keeps track of the number of attempts made by the player.";
                             break;
                         case 1:
-                            document.querySelector('.preview-title').textContent = "_hangman  (2/3)";
+                            document.querySelector('.preview-title').textContent = "_hangman  (2/6)";
                             document.querySelector('.preview-text').textContent = "This is a p5.js hangman game, where the objective is to guess the word by typing letters. Another person writes a word, and clicks 'start'. The player types letters inside the input area to guess the word. If the guessed letter is correct, it fills in the corresponding blanks in the word. If the letter is incorrect, it starts to draw parts of the hangman. The player wins by guessing the word before the hangman is fully drawn.";
                             break;
                         case 2:
-                            document.querySelector('.preview-title').textContent = "_bulletDodger  (3/3)";
+                            document.querySelector('.preview-title').textContent = "_bulletDodger  (3/6)";
                             document.querySelector('.preview-text').textContent = "This p5.js sketch is a bullet dodger game where the player controls a square character at the bottom of the screen using the right and left arrow keys. The objective is to avoid incoming bullets falling from the top of the screen. The player's score increases as they successfully dodge bullets. The game ends when a bullet collides with the player's character.";
+                            break;
+                        case 3:
+                            document.querySelector('.preview-title').textContent = "_registrationPlateGenerator  (4/6)";
+                            document.querySelector('.preview-text').textContent = "This p5.js sketch generates random car registration plates. It randomly generates letters and two randomly generated numbers. The colors of the plate background are determined by mapping the ASCII values of the generated letters to RGB values. When the mouse is clicked, new random letters and numbers are generated.";
+                            break;
+                        case 4:
+                            document.querySelector('.preview-title').textContent = "_tickleGame  (5/6)";
+                            document.querySelector('.preview-text').textContent = "This p5.js sketch is a simple interactive game called _tickleGame and  involves a moving circle controlled by the mouse cursor. The objective is to keep the mouse cursor over the circle for as long as possible. Each second the cursor remains over the circle, the player's counter increases. The game also tracks and displays the player's high score. ";
+                            break;
+                        case 5:
+                            document.querySelector('.preview-title').textContent = "_responsiveDigitatClockWebsite  (6/6)";
+                            document.querySelector('.preview-text').textContent = "This website is elegantly simple, with a sole purpose: to display the current time. It is also responsive to screen size. Try it out!";
                             break;
                         default:
                             break;
@@ -237,3 +276,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+////// ScrollDown arrow animation //////
+window.addEventListener('scroll', scrollFunction);
+
+function scrollFunction() {
+    var arrow = document.getElementById("scroll-down-arrow");
+    var scrollPercentage = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    var translateY = Math.min(scrollPercentage, 100); // Ensure translateY doesn't exceed 100%
+    arrow.style.transform = "translate(-50%, " + translateY + "vh)";
+}

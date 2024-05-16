@@ -6,6 +6,20 @@ html {
   height: 100%;
 }
 
+#scroll-down-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  transition: opacity 0.3s ease;
+}
+
+#scroll-down-arrow img {
+  width: 40px;
+  height: auto;
+}
+
 #canvas-container {
   position: fixed;
   top: 0;

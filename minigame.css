@@ -222,7 +222,8 @@
     display: inline-block;
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 3vw;
+    margin: 0 2vw;
 }
 
 .title {
