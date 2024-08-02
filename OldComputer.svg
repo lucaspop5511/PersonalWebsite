@@ -32,6 +32,9 @@
 <image class="screenshot" id="img4" width="376" height="290" x="189" y="66" xlink:href="ProjectsSS/4.png" opacity="0"/>
 <image class="screenshot" id="img5" width="376" height="290" x="189" y="66" xlink:href="ProjectsSS/5.png" opacity="0"/>
 <image class="screenshot" id="img6" width="376" height="290" x="189" y="66" xlink:href="ProjectsSS/6.png" opacity="0"/>
+<image class="screenshot" id="img7" width="376" height="290" x="189" y="66" xlink:href="ProjectsSS/7.png" opacity="0"/>
+<image class="screenshot" id="img8" width="376" height="290" x="189" y="66" xlink:href="ProjectsSS/8.png" opacity="0"/>
+<image class="screenshot" id="img9" width="376" height="290" x="189" y="66" xlink:href="ProjectsSS/9.png" opacity="0"/>
 
 <path d="M335.913 687.68L327.873 683.04V681.1L335.913 676.48V678.38L329.513 682.08L335.913 685.78V687.68Z" fill="white"/>
 <path d="M420.934 687.72V685.82L427.334 682.12L420.934 678.42V676.52L428.974 681.14V683.08L420.934 687.72Z" fill="white"/>
